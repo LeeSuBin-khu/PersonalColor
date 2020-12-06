@@ -32,6 +32,8 @@ const Test = ( { history } ) =>
 				{ answerText: '예', isCorrect: true },
 				{ answerText: '아니오', isCorrect: false }
 			],
+		},
+		{
 			questionText: '순백 셔츠보다 아이보리색이 더 어울린다',
 			answerOptions: [
 				{ answerText: '예', isCorrect: false },
