@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/color/static/css/main.2e1eb724.chunk.css",
+    "main.css": "/color/static/css/main.289d82f7.chunk.css",
     "main.js": "/color/static/js/main.7a475d3d.chunk.js",
     "main.js.map": "/color/static/js/main.7a475d3d.chunk.js.map",
     "runtime-main.js": "/color/static/js/runtime-main.f38f82e6.js",
@@ -8,7 +8,7 @@
     "static/js/2.cb720037.chunk.js": "/color/static/js/2.cb720037.chunk.js",
     "static/js/2.cb720037.chunk.js.map": "/color/static/js/2.cb720037.chunk.js.map",
     "index.html": "/color/index.html",
-    "static/css/main.2e1eb724.chunk.css.map": "/color/static/css/main.2e1eb724.chunk.css.map",
+    "static/css/main.289d82f7.chunk.css.map": "/color/static/css/main.289d82f7.chunk.css.map",
     "static/js/2.cb720037.chunk.js.LICENSE.txt": "/color/static/js/2.cb720037.chunk.js.LICENSE.txt",
     "static/media/test.css": "/color/static/media/po.02605270.ttf",
     "static/media/autumn.13a18e4d.png": "/color/static/media/autumn.13a18e4d.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.f38f82e6.js",
     "static/js/2.cb720037.chunk.js",
-    "static/css/main.2e1eb724.chunk.css",
+    "static/css/main.289d82f7.chunk.css",
     "static/js/main.7a475d3d.chunk.js"
   ]
 }
