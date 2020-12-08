@@ -6,10 +6,10 @@ const Test = ( { history } ) =>
  {
 	const questions = [
 		{
-			questionText: '머리카락 색이 검정에 가깝다',
+			questionText: '머리카락이 어떤 색에 가깝나요?',
 			answerOptions: [
-				{ answerText: '예', isCorrect: true },
-				{ answerText: '아니오', isCorrect: false }
+				{ answerText: '검은색', isCorrect: true },
+				{ answerText: '갈색', isCorrect: false }
 			],
 		},
 		{
@@ -20,24 +20,66 @@ const Test = ( { history } ) =>
 			],
 		},
 		{
-			questionText: '손목 혈관 색이 초록색이다',
+			questionText: '손목 혈관 색이 파란색보다는 초록색이다',
 			answerOptions: [
 				{ answerText: '예', isCorrect: false },
 				{ answerText: '아니오', isCorrect: true }
 			],
 		},
 		{
-			questionText: '햇볕에 장시간 있으면 피부가 붉어진다',
+			questionText: '햇볕에 장시간 있으면 피부가...',
+			answerOptions: [
+				{ answerText: '붉어진다', isCorrect: true },
+				{ answerText: '검게 그을린다', isCorrect: false }
+			],
+		},
+		{
+			questionText: '순백 셔츠보다 아이보리색이 더 어울리나요?',
+			answerOptions: [
+				{ answerText: '예', isCorrect: false },
+				{ answerText: '아니오', isCorrect: true }
+			],
+		},
+		{
+			questionText: '나는 OO색의 악세사리가 어울린다',
+			answerOptions: [
+				{ answerText: '골드', isCorrect: false },
+				{ answerText: '실버', isCorrect: true }
+			],
+		},
+		{
+			questionText: '눈동자가 어떤 색에 가깝나요?',
+			answerOptions: [
+				{ answerText: '갈색', isCorrect: false },
+				{ answerText: '검은색', isCorrect: true }
+			],
+		},
+		{
+			questionText: '맨 얼굴로 검은색 옷을 입으면...',
+			answerOptions: [
+				{ answerText: '칙칙해보인다', isCorrect: false },
+				{ answerText: '이목구비가 뚜렷해보인다', isCorrect: true }
+			],
+		},
+		{
+			questionText: '얼굴이 창백해보인다는 소리를 자주 듣나요?',
 			answerOptions: [
 				{ answerText: '예', isCorrect: true },
 				{ answerText: '아니오', isCorrect: false }
 			],
 		},
 		{
-			questionText: '순백 셔츠보다 아이보리색이 더 어울린다',
+			questionText: '손가락을 지그시 눌러 피가 몰려있을 때...',
 			answerOptions: [
-				{ answerText: '예', isCorrect: false },
-				{ answerText: '아니오', isCorrect: true }
+				{ answerText: '탁한 빨간색이다', isCorrect: false },
+				{ answerText: '분홍색이다', isCorrect: true }
+			],
+		},
+		{
+			questionText: '주변에서 나의 첫 인상은...',
+			answerOptions: [
+				{ answerText: '차가운 분위기가 난다', isCorrect: true },
+				{ answerText: '따뜻한 분위기가 난다', isCorrect: false }
 			],
 		},
 	]; //웜,쿨 파악
@@ -47,7 +89,7 @@ const Test = ( { history } ) =>
     const [score_c, setScore_cool] = useState(0); //쿨톤 점수 -> 웜,쿨 리스트에서 사용
 	const [score_w, setScore_warm] = useState(0); //웜톤 점수 -> 웜,쿨 리스트에서 사용
 	const [score, setPersonal] = useState(""); //퍼스널컬러 결과
-	
+	const [num, setNum] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {  //main 함수 1_웜쿨 검사
 		if (isCorrect) {
@@ -79,29 +121,37 @@ const Test = ( { history } ) =>
 	else{
 		setPersonal('restart');
 	}
+	setNum(num + 1);
 }; //함수2 끝.
 
 	return (
 		<div id='test'>
+			<head>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
+			</head>
 			{showScore ? ( 
 				<span className='score-section'>
-					<button onClick={() => handlePersonalScore(score_c,score_w)}>result</button>
-					{score === "cool" ? <button onClick={ () => {history.push("/test2")}}>next</button>
-					: <button onClick={ () => {history.push("/test3")}}>next</button>}
+					<button  className="animated infinite pulse" id="result" onClick={() => handlePersonalScore(score_c,score_w)}>result</button>
+					{num === 1 ?
+					(<div className = "season">
+						{score === "cool" ? (<button id='next' onClick={ () => {history.push("/test2")}}>next</button>)
+						: (<button id='next' onClick={ () => {history.push("/test3")}}>next</button>)}
+					</div>)
+						: (<div>click result!</div>)}
 				</span>
 			) : (
 				<>
-					<div className='question-section'>
-						<div id='question-count'>
-							<span>Question {currentQuestion + 1}</span>/{questions.length}
-						</div>
-						<div id="question-text">{questions[currentQuestion].questionText}</div>
+				<div className='question-section'>
+					<div id='question-count'>
+						<span>Question {currentQuestion + 1}</span>/{questions.length}
+						<div className="animated infinite pulse">{questions[currentQuestion].questionText}</div>
 					</div>
-					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button id = "btn_answer" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-						))}
-					</div>
+				</div>
+				<div className='answer-section'>
+					{questions[currentQuestion].answerOptions.map((answerOption) => (
+						<button id = "btn_answer" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+					))}
+				</div>
 				</>
 			)}
 		</div>
