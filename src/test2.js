@@ -1,3 +1,7 @@
+/*
+ Copyright © 2020, chrisblakely01, https://github.com/chrisblakely01/quiz-app
+*/
+
 import React, { useState } from 'react'; //리액트 불러오기
 import console from 'react-console'; //리액트 콘솔_크롬으로 실행
 import './test.css?v=1.0';//test.css 불러오기
