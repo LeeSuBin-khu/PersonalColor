@@ -8,6 +8,7 @@ import Spring from './spring';
 import Summer from './summer';
 import Autumn from './autumn';
 import Winter from './winter';
+import "./App.css";
 
 
 class App extends Component {
