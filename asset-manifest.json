@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/color/static/css/main.0259c48f.chunk.css",
-    "main.js": "/color/static/js/main.bdef6c09.chunk.js",
-    "main.js.map": "/color/static/js/main.bdef6c09.chunk.js.map",
-    "runtime-main.js": "/color/static/js/runtime-main.f38f82e6.js",
-    "runtime-main.js.map": "/color/static/js/runtime-main.f38f82e6.js.map",
-    "static/js/2.d663f00c.chunk.js": "/color/static/js/2.d663f00c.chunk.js",
-    "static/js/2.d663f00c.chunk.js.map": "/color/static/js/2.d663f00c.chunk.js.map",
-    "index.html": "/color/index.html",
-    "static/css/main.0259c48f.chunk.css.map": "/color/static/css/main.0259c48f.chunk.css.map",
-    "static/js/2.d663f00c.chunk.js.LICENSE.txt": "/color/static/js/2.d663f00c.chunk.js.LICENSE.txt",
-    "static/media/test.css": "/color/static/media/po.02605270.ttf",
-    "static/media/autumn.13a18e4d.png": "/color/static/media/autumn.13a18e4d.png",
-    "static/media/Home.css?v=1.0": "/color/static/media/main.a840803b.png",
-    "static/media/spring.40048675.jpg": "/color/static/media/spring.40048675.jpg",
-    "static/media/summer.7795f7ea.jpg": "/color/static/media/summer.7795f7ea.jpg",
-    "static/media/winter.a1978ae4.png": "/color/static/media/winter.a1978ae4.png"
+    "main.css": "/PersonalColor/static/css/main.36b5a2d1.chunk.css",
+    "main.js": "/PersonalColor/static/js/main.4bf72d54.chunk.js",
+    "main.js.map": "/PersonalColor/static/js/main.4bf72d54.chunk.js.map",
+    "runtime-main.js": "/PersonalColor/static/js/runtime-main.7a099e69.js",
+    "runtime-main.js.map": "/PersonalColor/static/js/runtime-main.7a099e69.js.map",
+    "static/js/2.d663f00c.chunk.js": "/PersonalColor/static/js/2.d663f00c.chunk.js",
+    "static/js/2.d663f00c.chunk.js.map": "/PersonalColor/static/js/2.d663f00c.chunk.js.map",
+    "index.html": "/PersonalColor/index.html",
+    "static/css/main.36b5a2d1.chunk.css.map": "/PersonalColor/static/css/main.36b5a2d1.chunk.css.map",
+    "static/js/2.d663f00c.chunk.js.LICENSE.txt": "/PersonalColor/static/js/2.d663f00c.chunk.js.LICENSE.txt",
+    "static/media/test.css": "/PersonalColor/static/media/po.02605270.ttf",
+    "static/media/autumn.13a18e4d.png": "/PersonalColor/static/media/autumn.13a18e4d.png",
+    "static/media/Home.css?v=1.0": "/PersonalColor/static/media/main.a840803b.png",
+    "static/media/spring.40048675.jpg": "/PersonalColor/static/media/spring.40048675.jpg",
+    "static/media/summer.7795f7ea.jpg": "/PersonalColor/static/media/summer.7795f7ea.jpg",
+    "static/media/winter.a1978ae4.png": "/PersonalColor/static/media/winter.a1978ae4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f38f82e6.js",
+    "static/js/runtime-main.7a099e69.js",
     "static/js/2.d663f00c.chunk.js",
-    "static/css/main.0259c48f.chunk.css",
-    "static/js/main.bdef6c09.chunk.js"
+    "static/css/main.36b5a2d1.chunk.css",
+    "static/js/main.4bf72d54.chunk.js"
   ]
 }
