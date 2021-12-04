@@ -6,7 +6,7 @@ const Summer = ( { history } ) =>
 {
     return (
         <div className='season_class'>
-            <img src = {summer} width='1300' height='600' alt = "summer"/>
+            <img src = {summer} width='1980px' height='auto' alt = "summer"/>
             <div id="btn_back">
             <button id="back_btn" onClick={ () => {history.push("/")}}>back</button>
             </div>

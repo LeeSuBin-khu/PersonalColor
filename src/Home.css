@@ -13,6 +13,9 @@ body
             color:rgb(230, 255, 255);
         }
 
+        .fadeInDown{
+            margin-top: 300px;
+        }
         @font-face 
         {
             font-family: "title";
@@ -53,7 +56,7 @@ body
             color: #fff;
             transform: translateY(-7px);
         }
-        button:hover, button:focus 
+        .soo_btn2:hover, .soo_btn2:focus 
         { animation-duration: 3s; animation-name: rainbow; animation-iteration-count: infinite; }
         @keyframes rainbow
         {

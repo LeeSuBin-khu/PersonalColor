@@ -76,9 +76,11 @@ const Test3 = ( { history } ) =>
 const handlePersonalScore_warm = (score_w_s,score_w_a) =>{ //함수2_봄, 가을 점수로 결과 구하기
 	if(score_w_s>score_w_a){
 		setPersonal('spring warm');
+		history.push("/spring");
 	}
 	else if(score_w_s<score_w_a){
 		setPersonal('autumn warm');
+		history.push("/autumn");
 	}
 	else{
 		setPersonal('restart');

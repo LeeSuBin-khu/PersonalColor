@@ -75,9 +75,11 @@ const Test2 = ( { history } ) =>
 const handlePersonalScore_cool = (score_c_s,score_c_w) =>{ //함수2_여쿨, 겨쿨 점수로 결과 구하기
 	if(score_c_s>score_c_w){
 		setPersonal('summer cool');
+		history.push("/summer");
 	}
 	else if(score_c_s<score_c_w){
 		setPersonal('winter cool');
+		history.push("/winter");
 	}
 	else{
 		setPersonal('restart');

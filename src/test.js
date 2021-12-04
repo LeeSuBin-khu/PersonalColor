@@ -1,5 +1,5 @@
 /*
- Copyright © 2020, chrisblakely01, https://github.com/chrisblakely01/quiz-app
+ Copyright © 2020, chrisblakely01 (Reference)
 */
 
 import React, { useEffect,useState } from 'react'; //리액트 불러오기
@@ -118,9 +118,11 @@ const Test = ( { history } ) =>
  const handlePersonalScore = (score_c,score_w) =>{ //함수2_웜,쿨 점수로 결과 구하기
 	if(score_c>score_w){
 		setPersonal('cool');
+		history.push("/test2");
 	}
 	else if(score_c<score_w){
 		setPersonal('warm');
+		history.push("/test3");
 	}
 	else{
 		setPersonal('restart');
